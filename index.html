@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Randomizer</title>
+    <link rel="stylesheet" href="css/index.min.css">
+</head>
+<body>
+<form>
+    <label for="setCount">How many sets of numbers?</label>
+    <div><input name="setCount" id="setCount" type="number" step="1" min="1" /></div>
+    <label for="setSize">How many numbers in each set?</label>
+    <div><input name="setSize" id="setSize" type="number" step="1" min="1" /></div>
+    <label for="setMin">Ranging from?</label>
+    <div><input name="setMin" id="setMin" type="number" step="1" /></div>
+    <label for="setMax">&hellip; up to and including?</label>
+    <div><input name="setMax" id="setMax" type="number" step="1" /></div>
+    <label for="unique">Need them to be unique?</label>
+    <div><input name="unique" id="unique" type="checkbox"/></div>
+    <label for="sorted">Want them sorted?</label>
+    <div><input name="sorted" id="sorted" type="checkbox"/></div>
+    <em><input type="submit" value="Generate"/></em>
+</form>
+<div class="result">
+    <div class="result-top"><div></div></div>
+    <div class="header"></div>
+    <div class="content"></div>
+</div>
+<div class="attrib">Background: "Random" by <a href="https://www.flickr.com/photos/criminalintent/8700015235/" target="_blank" rel="noopener noreferrer">Lars Plougmann</a> / CC BY-SA 2.0</div>
+<a class="github">Fork on</a>
+<script src="js/index.min.js"></script>
+</body>
+</html>
