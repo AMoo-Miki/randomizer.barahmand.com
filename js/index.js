@@ -99,4 +99,5 @@ elHeader.addEventListener('click', e => {
     selection.removeAllRanges();
     range.selectNode(elContent.childNodes.item(idx));
     selection.addRange(range);
+    document.execCommand("copy");
 }, false);
